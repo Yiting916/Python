@@ -7,12 +7,14 @@ while True:
     qkey = input()
     if qkey == '-1':
         break
-    
-    if qkey not in dc:
-        
-        print(qkey,'does not exist. Enter a new one:')
-        dc[qkey] = input()
+    elif qkey == '-2':
+        print(dc)
     else:
-        print(dc[qkey])
+        if qkey not in dc:
+            
+            print(qkey,'does not exist. Enter a new one:')
+            dc[qkey] = input()
+        else:
+            print(dc[qkey])        
 
 
