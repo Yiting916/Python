@@ -4,9 +4,7 @@ f1.close()
 
 for i in range(len(lst1)):
     lst1[i] = lst1[i].split(',')
-
     if lst1[i][6] == 'Y':
-        for j in range(len(lst1[i])):
+        for j in range(len(lst1[i])-1):
             print(lst1[i][j]+',', end='')
-    
-
+        print()
